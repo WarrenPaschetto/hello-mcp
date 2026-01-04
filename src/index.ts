@@ -5,7 +5,7 @@ import z from "zod";
 // Initialize server
 const server = new McpServer({
     name: "hello-mcp",
-    version: "1.0.0"
+    version: "1.0.0",
 });
 
 // Implant each capability below
@@ -96,3 +96,6 @@ server.prompt(
 const transport = new StdioServerTransport();
 await server.connect(transport);
 console.info('{"jsonrpc": "2.0", "method": "log", "params": { "message": "Serfver running..." }}');
+
+// Keep the process alive for STDIO
+// await new Promise(() => { });
