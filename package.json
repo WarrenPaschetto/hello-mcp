@@ -1,22 +1,19 @@
 {
   "name": "hello-mcp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node build/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.25.1",
-    "express": "^5.2.1",
-    "zod": "^4.3.5"
+    "@modelcontextprotocol/sdk": "^1.1.0",
+    "zod": "^3.22.4",
+    "express": "^4.18.2"
   },
   "devDependencies": {
-    "@types/express": "^5.0.6",
-    "@types/node": "^25.0.3",
-    "typescript": "^5.9.3"
+    "@types/node": "^22.10.5",
+    "@types/express": "^4.17.21",
+    "typescript": "^5.7.2"
   }
 }
